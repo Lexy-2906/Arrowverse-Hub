@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUB — Jeux Arrowverse</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #050b07;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 40px 20px;
+            background-image: radial-gradient(circle at 50% 20%, #0d2315 0%, #050b07 70%);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #2ea043;
+            text-shadow: 0 0 15px rgba(46, 160, 67, 0.6);
+            text-align: center;
+            border-bottom: 2px solid #1b4d28;
+            padding-bottom: 15px;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .game-card {
+            background-color: #0d1610;
+            border: 2px solid #1b4d28;
+            border-radius: 12px;
+            aspect-ratio: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #ffffff;
+            transition: all 0.3s ease;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .game-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(46, 160, 67, 0.1), transparent);
+            transition: 0.5s;
+        }
+
+        .game-card:hover::before {
+            left: 100%;
+        }
+
+        .game-card:hover {
+            border-color: #2ea043;
+            transform: translateY(-5px);
+            background-color: #122619;
+            box-shadow: 0 8px 20px rgba(46, 160, 67, 0.3);
+        }
+
+        .game-card h2 {
+            font-size: 1.2rem;
+            text-align: center;
+            font-weight: 600;
+            z-index: 1;
+        }
+
+        .game-card span {
+            font-size: 0.9rem;
+            color: #7ee787;
+            margin-top: 10px;
+            z-index: 1;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HUB — Jeux Arrowverse</h1>
+
+    <div class="grid-container">
+        <a href="jeu1.html" class="game-card">
+            <h2>Le choix stratégique</h2>
+            <span>Lancer</span>
+        </a>
+        <a href="jeu2.html" class="game-card">
+            <h2>Crisis Protocole</h2>
+            <span>Lancer</span>
+        </a>
+        <a href="jeu3.html" class="game-card">
+            <h2>Tribunal</h2>
+            <span>Lancer</span>
+        </a>
+        <a href="jeu4.html" class="game-card">
+            <h2>Battle</h2>
+            <span>Lancer</span>
+        </a>
+        <a href="jeu5.html" class="game-card">
+            <h2>Qui suis-je ?</h2>
+            <span>Lancer</span>
+        </a>
+        <a href="jeu6.html" class="game-card">
+            <h2>Vrai ou Faux</h2>
+            <span>Lancer</span>
+        </a>
+        <a href="jeu7.html" class="game-card">
+            <h2>Opération Multivers</h2>
+            <span>Lancer</span>
+        </a>
+    </div>
+
+</body>
+</html>
